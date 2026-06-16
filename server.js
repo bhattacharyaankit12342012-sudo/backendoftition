@@ -4,9 +4,12 @@ const express = require("express");
 const path = require("path");
 const bcrypt = require("bcryptjs");
 const mongoose = require("./db");
-const Admin = require("./routes/models/Admin");
-const Student = require("./routes/models/Student");
-const Setting = require("./routes/models/Setting");
+// const Admin = require("./routes/models/Admin");
+const Admin = require("./Admin");
+// const Student = require("./routes/models/Student");
+const Student = require("./Student");
+// const Setting = require("./routes/models/Setting");
+const Setting = require("./Setting");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
