@@ -1,4 +1,5 @@
-const mongoose = require("../../db");
+// const mongoose = require("../../db");
+const mongoose = require("./db");
 
 const AdminSchema = new mongoose.Schema({
   username: String,
