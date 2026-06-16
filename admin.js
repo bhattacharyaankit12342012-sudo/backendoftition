@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
-const mongoose = require("../db");
-const Admin = require("./models/Admin");
-const { createSession, clearSession, requireAuth } = require("../auth");
+const mongoose = require("./db");
+const Admin = require("./Admin");
+const { createSession, clearSession, requireAuth } = require("./auth");
 
 const fallbackAdmin = {
   username: "admin",
