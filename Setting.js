@@ -1,5 +1,5 @@
-const mongoose = require("../../db");
 
+const mongoose = require("./db");
 const settingSchema = new mongoose.Schema({
   tuitionName: { type: String, default: "Tuition Center" },
   contactNumber: { type: String, default: "" },
