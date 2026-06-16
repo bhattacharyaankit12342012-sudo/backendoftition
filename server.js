@@ -51,7 +51,7 @@ app.get("/health", (req, res) => {
   res.status(200).json({ ok: true, service: "tuition-management" });
 });
 
-app.use("/admin", require("./routes/admin"));
+app.use("/admin", require("./admin"));
 app.use("/parent", require("./routes/parent"));
 app.use("/students", require("./routes/student"));
 app.use("/dashboard", require("./routes/dashboard"));
