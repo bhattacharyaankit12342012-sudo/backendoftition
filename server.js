@@ -52,7 +52,7 @@ app.get("/health", (req, res) => {
 });
 
 app.use("/admin", require("./admin"));
-app.use("/parent", require("./routes/parent"));
+app.use("/parent", require("./parent"));
 app.use("/students", require("./routes/student"));
 app.use("/dashboard", require("./routes/dashboard"));
 
