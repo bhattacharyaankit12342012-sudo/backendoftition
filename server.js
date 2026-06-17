@@ -53,8 +53,8 @@ app.get("/health", (req, res) => {
 
 app.use("/admin", require("./admin"));
 app.use("/parent", require("./parent"));
-app.use("/students", require("./routes/student"));
-app.use("/dashboard", require("./routes/dashboard"));
+app.use("/stdents", require("./stdent"));
+app.use("/dashboard", require("./dashboard"));
 
 app.get(["/", "/index.html"], (req, res) => {
   res.status(200).sendFile(path.join(PUBLIC_DIR, "index.html"));
