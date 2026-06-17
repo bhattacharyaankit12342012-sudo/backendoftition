@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Student = require("./Student");
-const { createSession, clearSession, requireAuth } = require("../auth");
+const { createSession, clearSession, requireAuth } = require("./auth");
 
 router.post("/login", async (req, res) => {
   const { name, id } = req.body;
